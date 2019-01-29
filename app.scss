@@ -1,10 +1,12 @@
 //Variables
 $black: #333;
-$pale: #d2e1dd;
+$pale: #26dbab;
 $pink: #c69;
-$blue: #036;
+$red: hsl(0, 54%, 31%);
 $font: 'Andale Mono', monospace;
 $size:'14px';
+$blue:rgb(51, 51, 116);
+
 
 
 //MIXINS
@@ -13,7 +15,6 @@ $size:'14px';
     -webkit-border-radius:  $rad;
     -moz-border-radius:$rad;
     -ms-border-radius:  $rad;
-    border-radius: $rad;
 
     height: $height;
     width: $width;
@@ -27,7 +28,6 @@ $size:'14px';
     margin:0 auto
 
 }
-
 
 //STYLES
 body{
@@ -50,18 +50,18 @@ article{
 }
     
 
-header{
-   @include circle(100%, 200px , 200px , $blue , white );
-
+.circle{ 
+   padding-top: 70px;
    h1{
-    font-size: $font+2
-   }
+    font-size: $font+2    
+   }   
+}
+
+.Angular{
+    @include circle(50%, 200px , 200px , $red , white );
+}
+
+.React{
+    @include circle(50%, 200px , 200px , $blue , white );
 }
     
-footer{
-    @include circle(100%, 150px ,150px , $black , $pale);
-    font-size:$font -3;
-    position: relative;
-    z-index: -4;
-    margin-top: -30px;
-}

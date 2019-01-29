@@ -1,25 +1,108 @@
-<Html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
 <head>
-    <title>Sass Web Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="app.css">
+    <title>Sass Web Page</title>
 </head>
 
-<body>
-    <header>
-        <h1>This is Me</h1>
-    </header>
+<body id="top">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link">Angular</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link">React</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="my-5" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-4 " id="Tecnologies">Tecnologies</h2>
+
+                    <div class="mt-4">
+                        <ul class="list-inline ">
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-lg btn-angular">
+                                    <i class="fab fa-angular"> </i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-lg btn-react ">
+                                    <i class="fab fa-react"> </i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-lg btn-js">
+                                    <i class="fab fa-js"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-lg btn-html5 ">
+                                    <i class="fab fa-html5 "> </i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-lg btn-css3-alt ">
+                                    <i class="fab fa-css3-alt "> </i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-lg btn-php">
+                                    <i class="fab fa-php"> </i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-lg btn-node ">
+                                    <i class="fab fa-node "> </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="circle Angular">
+        <h1>Angular</h1>
+
+    </div>
     <article>
-        <h2>About me</h2>
+        <h2>About Angular</h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
+            Build features quickly with simple, declarative templates. Extend the template language with your own
+            components and use a wide array of existing components. Get immediate Angular-specific help and feedback
+            with nearly every IDE and editor. All this comes together so you can focus on building amazing apps rather
+            than trying to make the code work.
         </p>
     </article>
-    <footer>Exit</footer>
+
+
+    <div class="circle React">
+        <h1>React</h1>
+
+    </div>
+    <article>
+        <h2>About React</h2>
+        <p>
+            React makes it painless to create interactive UIs. Design simple views for each state in your application,
+            and React will efficiently update and render just the right components when your data changes.
+
+            Declarative views make your code more predictable and easier to debug.
+        </p>
+    </article>
+
 </body>
 
-</Html>
+</html>
